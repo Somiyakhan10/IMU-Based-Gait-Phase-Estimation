@@ -1,44 +1,36 @@
-Gait Analysis using Heel Strike & Toe-Off Detection
-Overview
+# Gait Analysis using Heel Strike & Toe-Off Detection
 
-This project provides a Python-based gait analysis tool that processes heel pressure and pitch signals to detect key gait events, including Heel Strikes (HS) and Toe-Offs (TO), and computes the gait phase (0–100%), cadence, and stride variability. The code is robust for signals of varying amplitude and includes visualizations to validate gait events.
+## Overview
+This project provides a Python-based gait analysis tool that processes **heel pressure** and **pitch signals** to detect key gait events, including:
 
-It is particularly suitable for applications like Parkinson’s gait monitoring, biomechanics research, or wearable sensor analysis.
+- **Heel Strikes (HS)**
+- **Toe-Offs (TO)**
+- **Gait Phase (0–100%)**
 
-Features
+It also computes gait metrics such as **cadence** (steps per minute) and **stride time variability** (seconds). The project is suitable for **biomechanics research, Parkinson’s gait monitoring, or wearable sensor analysis**.
 
-Detect Heel Strikes (HS) using adaptive threshold and peak prominence.
+---
 
-Detect Toe-Offs (TO) as local minima between consecutive heel strikes.
+## Features
+- Adaptive threshold for heel strike detection (works for low/high amplitude signals)
+- Toe-off detection as local minima between consecutive heel strikes
+- Robust handling of empty or noisy signals
+- Computes gait phase (0–100%) between consecutive heel strikes
+- Calculates cadence and stride time variability
+- Visualization:
+  - Filtered pitch
+  - Heel pressure with HS (red) & TO (green)
+  - Gait phase over time
+- Safe execution even if no heel strikes are detected
 
-Compute gait phase normalized from 0–100%.
+---
 
-Calculate cadence (steps per minute) and stride variability.
+## Requirements
+- Python 3.x
+- Libraries:
+  - numpy
+  - pandas
+  - matplotlib
+  - scipy
+  - google.colab (for file upload in Colab)
 
-Robust handling of low-amplitude or noisy signals.
-
-Visualization of:
-
-Filtered pitch
-
-Heel pressure with HS and TO
-
-Gait phase over time
-
-Safe execution even if no heel strikes are detected.
-
-Requirements
-
-Python 3.x
-
-Libraries:
-
-numpy
-
-pandas
-
-matplotlib
-
-scipy
-
-google.colab (for Google Colab upload functionality)
