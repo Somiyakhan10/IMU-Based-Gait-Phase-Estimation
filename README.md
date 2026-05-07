@@ -24,16 +24,7 @@
 - [Screenshots](#screenshots)
 - [How It Works](#how-it-works)
 - [Input File Format](#input-file-format)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Output Plots](#output-plots)
-- [Slip Risk Score Interpretation](#slip-risk-score-interpretation)
-- [Project Structure](#project-structure)
-- [Troubleshooting](#troubleshooting)
-- [Roadmap](#roadmap)
-- [Citation](#citation)
-- [License](#license)
-
+  
 ---
 
 ## 🔬 Overview
